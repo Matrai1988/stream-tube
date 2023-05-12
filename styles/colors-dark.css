@@ -1,0 +1,43 @@
+:root {
+    /*base style*/
+    --base-width: 94%;
+    --base-bg-color: #121212;
+    --base-font-size: 15px;
+    --base-font-color: #f9f9f9;
+    --base-font-family: 'Lato',sans-serif;
+    --base-transition: all 0.3s linear;
+
+    --link-color: #f9f9f9;
+
+    /*title*/
+    --title-font-family: 'Lato',sans-serif;
+    --title-font-color: #f9f9f9;
+
+    /*input*/
+    --input-border-color: #333333;
+    --input-bg-color: #222222;
+    --input-focus-bg-color: #333333;
+    --input-font-color: #f9f9f9;
+    --warning-input-outline-color: #ff0000;
+    --input-border-radius: 2px;
+
+    /*button*/
+    --button-font-family: 'Lato',sans-serif;
+    --button-bg-color: #ce1e1e;
+    --button-hover-bg-color: #e54141;
+    --button-font-color: #ffffff;
+    --button-border-radius: 35px;
+
+
+    --navbar-bg-color: rgb(32, 32, 32);
+    --color-hint: rgb(44, 43, 43);
+    --color-border: rgb(63, 63, 63);
+    --text-color: rgb(238, 238, 238);
+    --select-outline-color: rgb(0, 56, 115);
+    --search-color: rgb(202, 3, 3);
+    --navbar-height: 4rem;
+    --side-navbar-width: 12rem;
+    --content-width: calc(100vw - var(var(--side-navbar-width)));
+    --color-line: rgb(49, 49, 49);
+    --temp-bg-color: rgb(9, 55, 74);
+}
