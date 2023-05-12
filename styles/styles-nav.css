@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Bruno+Ace+SC");
+
+.navbar-container {
+    width: 100vw;
+    background: var(--navbar-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--navbar-height);
+    color: var(--text-color);
+}
+
+.navbar-left-section,
+.navbar-right-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.navbar-left-section,
+.navbar-right-section,
+.navbar-center-section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-center-section {
+    height: 2rem;
+}
+
+.navbar-left-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 22px;
+    font-family: "Bruno Ace SC", "Times New Roman", Times, serif;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navbar-left-section img {
+    height: 30%;
+}
+
+.navbar-select {
+    height: 100%;
+    padding: 0.5rem;
+    border-radius: 1rem 0 0 1rem;
+    background: var(--color-hint);
+    color: var(--text-color);
+    border: 1px solid var(--color-border);
+    z-index: 1;
+}
+
+.navbar-select:focus {
+    outline: solid var(--select-outline-color);
+}
+
+#navbar-searchInput {
+    height: calc(100% - 1.5px);
+    padding: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: var(--text-color);
+    border: 1px solid var(--color-border);
+    border-left: none;
+    background: var(--color-hint);
+}
+
+#navbar-searchInput:focus {
+    outline: none;
+}
+
+.navbar-search-btn {
+    justify-self: -10rem;
+    height: 100%;
+    width: 4rem;
+    margin-left: -1rem;
+    background: var(--search-color);
+    border-radius: 1rem 1rem 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-search-btn img {
+    height: 80%;
+}
+
+.navbar-cart {
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar-cart img {
+    height: 1.6rem;
+}
+
+.navbar-cart-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: var(--search-color);
+    margin-top: -1rem;
+    margin-left: -0.4rem;
+    border-radius: 0.2rem;
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.navbar-sign-in {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--text-color);
+    background-color: var(--search-color);
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar-sign-in img {
+    width: 1.6rem;
+}
+
+.navbar-night-ico {
+    height: 1.6rem;
+    cursor: pointer;
+}
+
+.navbar-content {
+    display: flex;
+}

@@ -18,13 +18,53 @@
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="" id="color-style">
+    <script>
+        const colorScheme = localStorage.getItem("colorScheme");
+        const colorLink = document.getElementById('color-style');
+        if(colorScheme == 'dark'){
+            colorLink.href = 'styles/colors-dark.css'
+        } else {
+            colorLink.href = 'styles/colors-light.css'
+        }
+    </script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
+<link rel="stylesheet" href="styles/styles-nav.css">
+<div class="navbar-container">
+    <a class="navbar-left-section" href="/">
+        <img src="images/triangle-ico.png" alt="triangle-ico">
+        <p>streamtube</p></a>
+    <div class="navbar-center-section">
+        <select class="navbar-select" name="cars" id="cars">
+            <option value="all">All</option>
+            <option value="video">Videos</option>
+            <option value="post">Posts</option>
+            <option value="product">Products</option>
+            <option value="collection">Collections</option>
+            <option value="user">Users</option>
+        </select>
+        <input type="text" name="searchInput" id="navbar-searchInput" placeholder="Search here...">
+        <button class="navbar-search-btn">
+            <img src="images/search.png" alt="search-icon">
+        </button>
+    </div>
+    <div class="navbar-right-section">
+        <a class="navbar-cart" href="/shop">
+            <img src="images/cart.png" alt="cart-icon">
+            <div class="navbar-cart-counter">0</div>
+        </a>
+        <a class="navbar-sign-in" href="/login">
+            <img src="images/user.png" alt="user-icon">
+            <p>Sign In</p>
+        </a>
+        <img class="navbar-night-ico" src="images/night.png" alt="night-icon">
+    </div>
+</div>
 
-
-    <script src="scripts/script.js"></script>
+<script src="scripts/script.js"></script>
 </body>
 
 </html>
