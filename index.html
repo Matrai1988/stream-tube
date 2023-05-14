@@ -22,7 +22,7 @@
     <script>
         const colorScheme = localStorage.getItem("colorScheme");
         const colorLink = document.getElementById('color-style');
-        if(colorScheme == 'dark'){
+        if (colorScheme == 'dark') {
             colorLink.href = 'styles/colors-dark.css'
         } else {
             colorLink.href = 'styles/colors-light.css'
@@ -32,40 +32,147 @@
 </head>
 
 <body>
-<link rel="stylesheet" href="styles/styles-nav.css">
-<div class="navbar-container">
-    <a class="navbar-left-section" href="/">
-        <img src="images/triangle-ico.png" alt="triangle-ico">
-        <p>streamtube</p></a>
-    <div class="navbar-center-section">
-        <select class="navbar-select" name="cars" id="cars">
-            <option value="all">All</option>
-            <option value="video">Videos</option>
-            <option value="post">Posts</option>
-            <option value="product">Products</option>
-            <option value="collection">Collections</option>
-            <option value="user">Users</option>
-        </select>
-        <input type="text" name="searchInput" id="navbar-searchInput" placeholder="Search here...">
-        <button class="navbar-search-btn">
-            <img src="images/search.png" alt="search-icon">
-        </button>
-    </div>
-    <div class="navbar-right-section">
-        <a class="navbar-cart" href="/shop">
-            <img src="images/cart.png" alt="cart-icon">
-            <div class="navbar-cart-counter">0</div>
+    <link rel="stylesheet" href="styles/styles-nav.css">
+    <div class="navbar-container">
+        <a class="navbar-left-section" href="/">
+            <img src="images/triangle-ico.png" alt="triangle-ico">
+            <p>streamtube</p>
         </a>
-        <a class="navbar-sign-in" href="/login">
-            <img src="images/user.png" alt="user-icon">
-            <p>Sign In</p>
-        </a>
-        <img class="navbar-color-ico" src="images/night.png" alt="night-icon" title="Set to dark mode" id="dark-icon">
-        <img class="navbar-color-ico" src="images/sun.png" alt="sun-icon" title="Set to light mode" id="light-icon">
+        <div class="navbar-center-section">
+            <select class="navbar-select" name="cars" id="cars">
+                <option value="all">All</option>
+                <option value="video">Videos</option>
+                <option value="post">Posts</option>
+                <option value="product">Products</option>
+                <option value="collection">Collections</option>
+                <option value="user">Users</option>
+            </select>
+            <input type="text" name="searchInput" id="navbar-searchInput" placeholder="Search here...">
+            <button class="navbar-search-btn">
+                <img src="images/search.png" alt="search-icon">
+            </button>
+        </div>
+        <div class="navbar-right-section">
+            <a class="navbar-cart" href="/shop">
+                <img src="images/cart.png" alt="cart-icon">
+                <div class="navbar-cart-counter">0</div>
+            </a>
+            <a class="navbar-sign-in" href="/login">
+                <img src="images/user.png" alt="user-icon">
+                <p>Sign In</p>
+            </a>
+            <img class="navbar-color-ico" src="images/night.png" alt="night-icon" title="Set to dark mode"
+                id="dark-icon">
+            <img class="navbar-color-ico" src="images/sun.png" alt="sun-icon" title="Set to light mode" id="light-icon">
+        </div>
     </div>
-</div>
 
-<script src="scripts/script.js"></script>
+
+    <!--      Top playlist section under this line         -->
+
+    <section class="topPlaylistSection">
+
+        <div class="upperDiv">
+            <h1>top playlists</h1>
+            <span class="redStrip"></span>
+        </div>
+
+        <div class="mainContentContainer">
+
+            <div class="contentContainer">
+
+                <div class="videoAndCounterContainer" data-play="play all">
+                    <span>
+                        <h1>13</h1>
+                        <img src="images/playlistButton.png" alt="">
+                    </span>
+                </div>
+
+                <div class="textContainer">
+                    <h1>Travel Playlist</h1>
+                    <div class="detailes">
+                        <img class="marginAll" src="" alt="">
+                        <p class="marginAll">John Does</p>
+                        <span class="circle marginAll"></span>
+                        <p class="detailesNumber marginAll">13</p>
+                        <p class="marginAll">videos</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contentContainer">
+
+                <div class="videoAndCounterContainer secondPictureStarwars" data-play="play all">
+                    <span>
+                        <h1>11</h1>
+                        <img src="images/playlistButton.png" alt="">
+                    </span>
+                </div>
+
+                <div class="textContainer">
+                    <h1>Travel Playlist</h1>
+                    <div class="detailes">
+                        <img class="marginAll" src="" alt="">
+                        <p class="marginAll">John Does</p>
+                        <span class="circle marginAll"></span>
+                        <p class="detailesNumber marginAll">11</p>
+                        <p class="marginAll">videos</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contentContainer">
+
+                <div class="videoAndCounterContainer thirdPictureConcert" data-play="play all">
+                    <span>
+                        <h1>10</h1>
+                        <img src="images/playlistButton.png" alt="">
+                    </span>
+                </div>
+
+                <div class="textContainer">
+                    <h1>Travel Playlist</h1>
+                    <div class="detailes">
+                        <img class="marginAll" src="" alt="">
+                        <p class="marginAll">John Does</p>
+                        <span class="circle marginAll"></span>
+                        <p class="detailesNumber marginAll">10</p>
+                        <p class="marginAll">videos</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contentContainer">
+
+                <div class="videoAndCounterContainer fourthPictureSoccer" data-play="play all">
+                    <span>
+                        <h1>9</h1>
+                        <img src="images/playlistButton.png" alt="">
+                    </span>
+                </div>
+
+                <div class="textContainer">
+                    <h1>Travel Playlist</h1>
+                    <div class="detailes">
+                        <img class="marginAll" src="" alt="">
+                        <p class="marginAll">John Does</p>
+                        <span class="circle marginAll"></span>
+                        <p class="detailesNumber marginAll">9</p>
+                        <p class="marginAll">videos</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
