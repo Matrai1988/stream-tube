@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 /* latin-ext */
 @font-face {
     font-family: 'Bruno Ace SC';
@@ -7,6 +8,7 @@
     src: url(https://fonts.gstatic.com/s/brunoacesc/v1/ptROTiycffFLBuiHjdJDl63IJCtqle8.woff2) format('woff2');
     unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
     font-family: 'Bruno Ace SC';
@@ -29,18 +31,29 @@ html {
     color: var(--base-font-color);
     scroll-behavior: smooth;
 }
-*, *::before, *::after {
+
+
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
-div, ul, li, p {
+
+div,
+ul,
+li,
+p {
     padding: 0;
     margin: 0;
 }
+
 img {
     border: 0;
     max-width: 100%;
     height: auto;
 }
+
 a {
     color: var(--link-color);
     text-decoration: underline;
@@ -48,6 +61,7 @@ a {
     transition: var(--base-transition);
     cursor: pointer;
 }
+
 a:hover,
 a:focus {
     color: var(--base-font-color);
@@ -72,6 +86,7 @@ h1 {
     text-align: left;
     text-transform: uppercase;
 }
+
 h2 {
     margin: 30px 0 20px 0;
     padding: 0;
@@ -85,6 +100,7 @@ h2 {
     word-break: break-word;
     text-transform: uppercase;
 }
+
 h3 {
     margin: 25px 0 15px 0;
     padding: 0;
@@ -96,6 +112,7 @@ h3 {
     text-decoration: none;
     text-align: left;
 }
+
 h4 {
     margin: 10px 0;
     padding: 0;
@@ -134,6 +151,7 @@ textarea:focus {
     background: var(--input-focus-bg-color);
     outline: 0 none;
 }
+
 input[type="text"].warning-input,
 input[type="email"].warning-input,
 input[type="number"].warning-input,
@@ -165,6 +183,7 @@ button,
     position: relative;
     z-index: 10;
 }
+
 input[type="button"]:hover,
 button:hover,
 .btn:hover,
@@ -175,6 +194,7 @@ button:focus,
     background: var(--button-hover-bg-color);
     color: var(--button-font-color);
 }
+
 input[type="button"].active-button,
 button.active-button,
 .btn.active-button {
@@ -186,33 +206,204 @@ button.active-button,
 .l-w100 {
     width: 100%;
 }
+
 .l-w90 {
     width: 90%;
 }
+
 .l-w80 {
     width: 80%;
 }
+
 .l-w70 {
     width: 70%;
 }
+
 .l-w60 {
     width: 60%;
 }
+
 .l-w50 {
     width: 50%;
 }
+
 .l-w40 {
     width: 40%;
 }
+
 .l-w30 {
     width: 30%;
 }
+
 .l-w20 {
     width: 20%;
 }
+
 .l-w10 {
     width: 10%;
 }
+
+
+/*         top playlist past under this line           */
+
+.topPlaylistSection {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+}
+
+.upperDiv {
+    display: flex;
+    flex-direction: column;
+    border-bottom: .1px solid rgb(113, 113, 113);
+}
+
+.upperDiv h1 {
+    text-align: left;
+    margin: 1rem 0;
+    font-size: 1.25rem;
+}
+
+.upperDiv span {
+    width: 3.5rem;
+    height: .25rem;
+    background: red;
+}
+
+
+.videoAndCounterContainer {
+    width: 20rem;
+    height: 12rem;
+    border-radius: .25rem;
+    background: url(../images/beachPictures.png);
+    background-size: cover;
+    margin: 0 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.videoAndCounterContainer::after {
+    content: attr(data-play);
+    font-size: 1rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: .1s;
+}
+
+.videoAndCounterContainer:hover::after {
+    background: rgba(0, 0, 0, 0.485);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    opacity: 1;
+    /*  
+    background-image: url(../images/playButton.png);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    filter: invert(100%);
+          */
+}
+
+
+.secondPictureStarwars {
+    background: url(../images/starWars.png);
+    background-size: cover;
+}
+
+.thirdPictureConcert {
+    background: url(../images/concert.png);
+    background-size: cover;
+}
+
+.fourthPictureSoccer {
+    background: url(../images/soccer.png);
+    background-size: cover;
+}
+
+.mainContentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.videoAndCounterContainer span {
+    position: absolute;
+    width: 7rem;
+    height: 12rem;
+    top: 0;
+    right: 0;
+    border-radius: 0 .25 .25rem 0;
+    background: rgba(0, 0, 0, 0.503);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.videoAndCounterContainer span h1 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+}
+
+.videoAndCounterContainer span img {
+    width: 2rem;
+    filter: invert(90%);
+    margin-bottom: 1rem;
+}
+
+.textContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.textContainer h1 {
+    margin: 0;
+    font-size: 15px;
+
+}
+
+.detailes {
+    display: flex;
+    margin-left: -2rem;
+}
+
+.marginAll {
+    margin-left: 1rem;
+}
+
+.circle {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background: rgb(187, 187, 187);
+    margin-top: 1rem;
+}
+
+
+/*         top playlist so far           */
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 980px) {
@@ -220,30 +411,39 @@ button.active-button,
     .m-w100 {
         width: 100%;
     }
+
     .m-w90 {
         width: 90%;
     }
+
     .m-w80 {
         width: 80%;
     }
+
     .m-w70 {
         width: 70%;
     }
+
     .m-w60 {
         width: 60%;
     }
+
     .m-w50 {
         width: 50%;
     }
+
     .m-w40 {
         width: 40%;
     }
+
     .m-w30 {
         width: 30%;
     }
+
     .m-w20 {
         width: 20%;
     }
+
     .m-w10 {
         width: 10%;
     }
@@ -255,30 +455,39 @@ button.active-button,
     .s-w100 {
         width: 100%;
     }
+
     .s-w90 {
         width: 90%;
     }
+
     .s-w80 {
         width: 80%;
     }
+
     .s-w70 {
         width: 70%;
     }
+
     .s-w60 {
         width: 60%;
     }
+
     .s-w50 {
         width: 50%;
     }
+
     .s-w40 {
         width: 40%;
     }
+
     .s-w30 {
         width: 30%;
     }
+
     .s-w20 {
         width: 20%;
     }
+
     .s-w10 {
         width: 10%;
     }
@@ -291,12 +500,15 @@ button.active-button,
     h1 {
         font-size: 2rem;
     }
+
     h2 {
         font-size: 1.8rem;
     }
+
     h3 {
         font-size: 1.4rem;
     }
+
     h4 {
         font-size: 1.2rem;
     }
