@@ -283,7 +283,7 @@ button.active-button,
 }
 
 .videoAndCounterContainer::after {
-    content: attr(data-play);
+    content: " ? " attr(data-play) " ? ";
     font-size: 1rem;
     position: absolute;
     width: 100%;
@@ -375,7 +375,7 @@ button.active-button,
 .textContainer h1 {
     margin: 0;
     font-size: 15px;
-
+    text-transform: none;
 }
 
 .detailes {
