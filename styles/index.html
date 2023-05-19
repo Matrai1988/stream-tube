@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StreamTube</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="New streaming platform">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#ff0000">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="" id="color-style">
+    <script>
+        const colorScheme = localStorage.getItem("colorScheme");
+        const colorLink = document.getElementById('color-style');
+        if (colorScheme == 'dark') {
+            colorLink.href = 'styles/colors-dark.css'
+        } else {
+            colorLink.href = 'styles/colors-light.css'
+        }
+    </script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <link rel="stylesheet" href="styles/styles-nav.css">
+    <div class="navbar-container">
+        <a class="navbar-left-section" href="/">
+            <img src="images/triangle-ico.png" alt="triangle-ico">
+            <p>streamtube</p>
+        </a>
+        <div class="navbar-center-section">
+            <select class="navbar-select" name="cars" id="cars">
+                <option value="all">All</option>
+                <option value="video">Videos</option>
+                <option value="post">Posts</option>
+                <option value="product">Products</option>
+                <option value="collection">Collections</option>
+                <option value="user">Users</option>
+            </select>
+            <input type="text" name="searchInput" id="navbar-searchInput" placeholder="Search here...">
+            <button class="navbar-search-btn">
+                <img src="images/search.png" alt="search-icon">
+            </button>
+        </div>
+        <div class="navbar-right-section">
+            <a class="navbar-cart" href="/shop">
+                <img src="images/cart.png" alt="cart-icon">
+                <div class="navbar-cart-counter">0</div>
+            </a>
+            <a class="navbar-sign-in" href="/login">
+                <img src="images/user.png" alt="user-icon">
+                <p>Sign In</p>
+            </a>
+            <img class="navbar-color-ico" src="images/night.png" alt="night-icon" title="Set to dark mode"
+                id="dark-icon">
+            <img class="navbar-color-ico" src="images/sun.png" alt="sun-icon" title="Set to light mode" id="light-icon">
+        </div>
+    </div>
+
+
+    <!--      Top playlist section under this line         -->
+
+    <section class="topPlaylistSection">
+
+        <div class="upperDiv">
+            <h1>top playlists</h1>
+            <span class="redStrip"></span>
+        </div>
+
+        <div class="mainContentContainer">
+
+            <div class="contentContainer">
+
+                <div class="videoAndCounterContainer" data-play="PLAY ALL">
+                    <span>
+                        <h1>13</h1>
+                        <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.5 4.5H3V6h13.5V4.5Z"></path>
+                            <path d="M16.5 9H3v1.5h13.5V9Z"></path>
+                            <path d="M12 13.5H3V15h9v-1.5Z"></path>
+                            <path d="M15.75 13.5 21 17.25 15.75 21v-7.5Z"></path>
+                        </svg>
+                    </span>
+                </div>
+
+                <div class="textContainer">
+                    <h1>Travel Playlist</h1>
+                    <div class="detailes">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.125 6.75c-.184 2.478-2.063 4.5-4.125 4.5-2.063 0-3.945-2.021-4.125-4.5-.188-2.578 1.64-4.5 4.125-4.5 2.484 0 4.312 1.969 4.125 4.5Z">
+                            </path>
+                            <path
+                                d="M12 14.25c-4.078 0-8.217 2.25-8.983 6.497-.092.512.197 1.003.733 1.003h16.5c.536 0 .826-.491.734-1.003C20.217 16.5 16.078 14.25 12 14.25Z">
+                            </path>
+                        </svg>
+                        <p class="marginAll">John Does</p>
+                        <span class="circle marginAll"></span>
+                        <p class="detailesNumber marginAll">13</p>
+                        <p class="marginAll">videos</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contentContainer">
+
+                <div class="videoAndCounterContainer secondPictureStarwars" data-play="PLAY ALL">
+                    <span>
+                        <h1>11</h1>
+                        <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.5 4.5H3V6h13.5V4.5Z"></path>
+                            <path d="M16.5 9H3v1.5h13.5V9Z"></path>
+                            <path d="M12 13.5H3V15h9v-1.5Z"></path>
+                            <path d="M15.75 13.5 21 17.25 15.75 21v-7.5Z"></path>
+                        </svg>
+                    </span>
+                </div>
+
+                <div class="textContainer">
+                    <h1>Gaming Playlist</h1>
+                    <div class="detailes">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.125 6.75c-.184 2.478-2.063 4.5-4.125 4.5-2.063 0-3.945-2.021-4.125-4.5-.188-2.578 1.64-4.5 4.125-4.5 2.484 0 4.312 1.969 4.125 4.5Z">
+                            </path>
+                            <path
+                                d="M12 14.25c-4.078 0-8.217 2.25-8.983 6.497-.092.512.197 1.003.733 1.003h16.5c.536 0 .826-.491.734-1.003C20.217 16.5 16.078 14.25 12 14.25Z">
+                            </path>
+                        </svg>
+                        <p class="marginAll">John Does</p>
+                        <span class="circle marginAll"></span>
+                        <p class="detailesNumber marginAll">11</p>
+                        <p class="marginAll">videos</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contentContainer">
+
+                <div class="videoAndCounterContainer thirdPictureConcert" data-play="PLAY ALL">
+                    <span>
+                        <h1>10</h1>
+                        <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.5 4.5H3V6h13.5V4.5Z"></path>
+                            <path d="M16.5 9H3v1.5h13.5V9Z"></path>
+                            <path d="M12 13.5H3V15h9v-1.5Z"></path>
+                            <path d="M15.75 13.5 21 17.25 15.75 21v-7.5Z"></path>
+                        </svg>
+                    </span>
+                </div>
+
+                <div class="textContainer">
+                    <h1>Pop Music Playlist</h1>
+                    <div class="detailes">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.125 6.75c-.184 2.478-2.063 4.5-4.125 4.5-2.063 0-3.945-2.021-4.125-4.5-.188-2.578 1.64-4.5 4.125-4.5 2.484 0 4.312 1.969 4.125 4.5Z">
+                            </path>
+                            <path
+                                d="M12 14.25c-4.078 0-8.217 2.25-8.983 6.497-.092.512.197 1.003.733 1.003h16.5c.536 0 .826-.491.734-1.003C20.217 16.5 16.078 14.25 12 14.25Z">
+                            </path>
+                        </svg>
+                        <p class="marginAll">John Does</p>
+                        <span class="circle marginAll"></span>
+                        <p class="detailesNumber marginAll">10</p>
+                        <p class="marginAll">videos</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contentContainer">
+
+                <div class="videoAndCounterContainer fourthPictureSoccer " data-play="PLAY ALL"
+                    id="videoAndCounterContainer">
+                    <span>
+                        <h1>9</h1>
+                        <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.5 4.5H3V6h13.5V4.5Z"></path>
+                            <path d="M16.5 9H3v1.5h13.5V9Z"></path>
+                            <path d="M12 13.5H3V15h9v-1.5Z"></path>
+                            <path d="M15.75 13.5 21 17.25 15.75 21v-7.5Z"></path>
+                        </svg>
+                    </span>
+                </div>
+
+                <div class="textContainer">
+                    <h1>Funny Moments Playlist</h1>
+                    <div class="detailes">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.125 6.75c-.184 2.478-2.063 4.5-4.125 4.5-2.063 0-3.945-2.021-4.125-4.5-.188-2.578 1.64-4.5 4.125-4.5 2.484 0 4.312 1.969 4.125 4.5Z">
+                            </path>
+                            <path
+                                d="M12 14.25c-4.078 0-8.217 2.25-8.983 6.497-.092.512.197 1.003.733 1.003h16.5c.536 0 .826-.491.734-1.003C20.217 16.5 16.078 14.25 12 14.25Z">
+                            </path>
+                        </svg>
+                        <p class="marginAll">John Does</p>
+                        <span class="circle marginAll"></span>
+                        <p class="detailesNumber marginAll">9</p>
+                        <p class="marginAll">videos</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
